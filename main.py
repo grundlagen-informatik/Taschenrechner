@@ -1,6 +1,7 @@
 def addieren(a, b):
     return a + b
-
+def subtrahieren(a, b):
+    return a - b
 def main():
     print("Taschenrechner")
     print("1 fuer Addition")
@@ -12,10 +13,13 @@ def main():
 
     match wahl:
         case "1":
-            print("Resultat: {}".format(addieren(2,3)))
-            # Hier Funktion für Addition einfügen
+            a = float(input("Erste Zahl: "))
+            b = float(input("Zweite Zahl: "))
+            print("Resultat: {}".format(addieren(a, b)))
         case "2":
-            # Hier Funktion für die Subtraktion einfügen
+            a = float(input("Erste Zahl: "))
+            b = float(input("Zweite Zahl: "))
+            print("Resultat: {}".format(subtrahieren(a, b)))
         case "3":
             # Hier die Funktion für die Multiplikation einfügen
         case "4":
