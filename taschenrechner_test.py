@@ -1,5 +1,5 @@
 import unittest
-from main import addieren, subtraktion, multiplizieren
+from main import addieren, subtraktion, multiplizieren, dividieren
 
         
 class test_taschenrechner(unittest.TestCase):
@@ -7,6 +7,12 @@ class test_taschenrechner(unittest.TestCase):
         self.assertEqual(multiplizieren(10, 2), 20)
         self.assertEqual(multiplizieren(5, 3), 13)
         self.assertEqual(multiplizieren(4, 2.5), 10)
+        
+    def test_division(self):
+        self.assertEqual(dividieren(10, 2), 5)
+        self.assertEqual(dividieren(6, 3), 2)
+        self.assertEqual(dividieren(4, 8), 0.5)
+        self.assertEqual(dividieren(10, 0), "ERROR: division by zero")
 
     def test_addition(self):
         self.assertEqual(addieren(2, 3), 5)

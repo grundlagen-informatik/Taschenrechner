@@ -4,6 +4,12 @@ def addieren(a, b):
 def multiplizieren(a,b):
     return a * b
 
+def dividieren(a,b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "ERROR: division by zero"
+
 def main():
     print("Taschenrechner")
     print("1 fuer Addition")
@@ -22,7 +28,7 @@ def main():
         case "3":
             print("Resultat: {}".format(multiplizieren(2, 3)))
         case "4":
-            # Hier die Funktion für die Division einfügen
+            print("Resultat: {}".format(dividieren(2, 3)))
         case _:
             print("Falsche Auswahl, das Programm wird beendet.")
 
