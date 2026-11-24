@@ -2,9 +2,7 @@ def addieren(a, b):
     return a + b
 
 def multiplizieren(a,b):
-    if b == 0:
-        return "ERROR: Division durch 0 ist nicht erlaubt"
-    return a / b
+    return a * b
 
 def main():
     print("Taschenrechner")
