@@ -1,6 +1,9 @@
 def addieren(a, b):
     return a + b
 
+def subtraktion(a, b):
+    return a - b
+
 def multiplikation(a, b):
     return a * b
 
@@ -20,10 +23,13 @@ def main():
 
     match wahl:
         case "1":
-            print("Resultat: {}".format(addieren(2,3)))
-            # Hier Funktion für Addition einfügen
+            a = float(input("Erste Zahl: "))
+            b = float(input("Zweite Zahl: "))
+            print("Resultat: {}".format(addieren(a, b)))
         case "2":
-            # Hier Funktion für die Subtraktion einfügen
+            a = float(input("Erste Zahl: "))
+            b = float(input("Zweite Zahl: "))
+            print("Resultat: {}".format(subtraktion(a, b)))
         case "3":
             a = float(input("Erste Zahl: "))
             b = float(input("Zweite Zahl: "))
