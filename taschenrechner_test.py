@@ -1,11 +1,11 @@
 import unittest
-from main import addieren, subtraktion, multiplizieren, dividieren
+from main import addieren, multiplizieren, dividieren
 
         
 class test_taschenrechner(unittest.TestCase):
     def test_multiplikation(self):
         self.assertEqual(multiplizieren(10, 2), 20)
-        self.assertEqual(multiplizieren(5, 3), 13)
+        self.assertEqual(multiplizieren(5, 3), 15)
         self.assertEqual(multiplizieren(4, 2.5), 10)
         
     def test_division(self):
